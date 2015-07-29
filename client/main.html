@@ -1,0 +1,62 @@
+<template name="main">       
+    <div class="container">
+      <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Blog</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Blog</a>
+            </div>
+        
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                 <li><a class="icon-bar" href="/">Home</a></li>
+                 <li><a class="icon-bar" href="{{ pathFor 'about' }}">About</a></li>
+                <!-- <li><a class="icon-bar" href="#bottom">Contacts</a></li>-->
+              </ul>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="jumbotron">
+         
+            <!--  <h1 class="wow animated infinite bounce">DS Blog</h1> -->
+            <h1 class="wow animated fadeInDownBig">DS Blog</h1>
+            <p class="wow animated fadeInRightBig">
+               <i>A blog, a project and a challenge: MeteorJS and Bootstrap training field.</i>
+            </p>
+
+        </div>
+    
+        <div class="row">
+    
+            <!-- /.blog-main -->
+            <div class="col-sm-8 blog-main">
+    
+               <!--{{> posts }}-->
+               {{> yield}}
+               
+               <!--
+                <nav>
+                    <ul class="pager">
+                        <li><a href="#" id="prev">Previous</a></li>
+                        <li><a href="#" id="next">Next</a></li>
+                    </ul>
+                </nav>
+               -->
+            </div>
+            
+            <!-- /.blog-sidebar -->
+           {{> sidebar}}
+    
+        </div>
+        <!-- /.row -->
+        
+        {{> footer }}
+    </div>
+    <!-- /.container -->
+</template>

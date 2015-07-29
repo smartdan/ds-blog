@@ -1,0 +1,49 @@
+<template name="post">
+    <div class="blog-post">
+        {{#if isEditingPost}}
+            <form class="form-edit">
+                <div class="control-group">
+                    <label class="control-label" for="title">Title</label>
+                    <div class="controls">
+                        <input type="text" id="title" value="{{title}}" />
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="body">Body</label>
+                    <div class="controls">
+                        <textarea name="body" id='body' rows="10" cols="50" value="{{body}}"></textarea>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <button type="submit" class="btn btn-primary">Modify post</button>
+                    <button type="button" class="btn cancel">Cancel</button>
+                </div>
+            </form>
+        {{else}}
+            <h2 class="blog-post-title animated bounce"><a href="/show/{{title}}"> {{ title }} </a></h2>
+            <p class="blog-post-meta">{{ dateFormatted }} by <strong>{{ author }}</strong></p>
+            {{#if showShort}}
+                <p>{{{ shortBody }}}</p>
+                <div>
+                    <a href="#" class="more"> read more</a>
+                    <br/>
+                </div>
+            {{else}}
+                <p>{{{ body }}}</p>
+                <div>
+                    <a href="#" class="less"> read less</a>
+                    <br/>
+                </div>
+            {{/if}}
+            
+            {{#if myUser}}
+                <br/>
+                <a href="#" class="edit">edit</a> 
+                <br/> 
+                <a href="#" class="remove">remove</a> 
+                <br/> 
+            {{/if}}
+        {{/if}}
+    </div>
+    <!-- /.blog-post -->
+</template>

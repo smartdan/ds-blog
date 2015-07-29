@@ -1,0 +1,33 @@
+.well{
+  text-align:center;
+}
+
+.sidebar h4{
+  font-weight: bold;
+  font-style: italic;
+}
+
+
+.jumbotron {
+    margin-bottom: 0px;
+    background-image: url(http://www.okgrow.com/images/meteor-background.jpg); /*/images/background.jpg);*/
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.jumbotron a{  
+    text-decoration: none;
+}
+
+p {
+  -vendor-animation-duration: 3s;
+  -vendor-animation-delay: 2s;
+  -vendor-animation-iteration-count: infinite;
+}
+
+.blog-post-title a
+{
+  color: white;
+  font-style: italic;
+}

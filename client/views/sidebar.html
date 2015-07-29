@@ -1,0 +1,41 @@
+<template name="sidebar">
+    <div class="sidebar col-sm-3 col-sm-offset-1">
+        <h4>About</h4>
+        <p>
+            <blockquote>This blog is developed with
+                <em>
+                    <a href="https://www.meteor.com/">Meteor JS</a>
+                </em> and a
+                <a href="http://getbootstrap.com/2.3.2/index.html"><em>Bootstrap</em></a> theme.
+                <br/>The system is still in alpha version, but fully operational. Enjoy my posts!</blockquote>
+        </p>
+        <h4>Archive</h4>
+        <p>
+            <blockquote>
+                <ol class="list-unstyled">{{#each recents}}
+                    <li>
+                        <a href="/show/{{title}}">{{ formatTime date }} - {{ title }} </a>
+                    </li>{{/each}}</ol>
+            </blockquote>
+        </p>
+        <h4>Social</h4>
+        <p>
+            <blockquote>
+                <ol class="list-unstyled">
+                    <li>
+                        <a href="https://github.com/smartdan">GitHub</a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/smartdan">Twitter</a>
+                    </li>
+                </ol>
+            </blockquote>
+        </p>
+        <h4>Authentication</h4>
+        <p>
+            <blockquote>
+                <div>{{> loginButtons}}</div>
+            </blockquote>
+        </p>
+    </div>
+</template>
