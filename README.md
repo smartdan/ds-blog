@@ -1,5 +1,5 @@
 # ds-blog
-Meteor Blog platform 
+**Meteor Blog platform 
 <br/><br/><br/>
 Blogging system developed with METEOR
 <br/><br/><br/>
