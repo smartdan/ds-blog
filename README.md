@@ -1,8 +1,8 @@
 # ds-blog
 <h2>Meteor Blog platform </h2>
-<br/><br/>
+<br/>
 <h3>Blogging system developed with METEOR</h3>
-<br/><br/><br/>
+<br/>
 <ul>
 <li>meteor-platform </li>
 <li>twbs:bootstrap</li>
