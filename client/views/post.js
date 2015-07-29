@@ -2,7 +2,7 @@ Session.set('showShort', true);
 
 Template.post.helpers({
   myUser:function(){
-    var myusr = Meteor.users.find({"emails.address": "info@danielesabetta.it"}).fetch()[0];
+    var myusr = Meteor.users.find({"emails.address": "info@mymail.it"}).fetch()[0];
     if(Meteor.userId() == myusr._id )
         return true;
   },  
