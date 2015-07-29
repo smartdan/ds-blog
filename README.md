@@ -1,8 +1,8 @@
 # ds-blog
 Meteor Blog platform 
-
+<br/><br/><br/>
 Blogging system developed with METEOR
-<br/>
+<br/><br/><br/>
 meteor-platform <br/>
 twbs:bootstrap<br/>
 msavin:mongol<br/>
